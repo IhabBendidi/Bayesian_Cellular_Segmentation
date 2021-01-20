@@ -17,6 +17,21 @@ Examples of images in data :
 
 <img src="https://github.com/IhabBendidi/Bayesian_Cellular_Segmentation/blob/main/images/raw_data_images.png" alt="Dataset images" width="600"/>
 
-### Architecture
-
 ### Results
+
+We were also able to track the predictions of our Bayesian model over iterations, as shown in the following figure. During the very first iteration, no concrete results can be predicted. But it is remarkable that after 300 iterations, general results show that the model starts to find the cells and to detect them, to finally find them with very minimal errors as early as the 1200th iteration.
+
+<img src="https://github.com/IhabBendidi/Bayesian_Cellular_Segmentation/blob/main/images/bayesian_training_progress_1.png" alt="training progress"/>
+
+However, the figure below also shows that the model may "forget" some of the learned characteristics, as it tries to learn the weight distribution that maximizes overall accuracy. The model here is well capable of making accurate predictions on the image as early as the 300th iteration, but it "forgets" its learning at the 2850th iteration, even though its overall accuracy is much higher at this iteration.
+
+<img src="https://github.com/IhabBendidi/Bayesian_Cellular_Segmentation/blob/main/images/bayesian_training_progress_2.png" alt="training progress"/>
+
+The results of the model show the relevance of the Bayesian approach. The figure below presents results performed on the test data. In addition to the classical predictions, we can also have the DICE performance measure, which is a quantification of the model's measure of certainty with respect to its prediction. The images below show that the model has a high degree of certainty about its predictions, which are actually correct. The model also predicts the variance of the cells, thus specifically showing the areas of uncertainty, by projecting a heatmap on the image, where the red color shows the most uncertainty, and the blue the least uncertainty.
+
+<img src="https://github.com/IhabBendidi/Bayesian_Cellular_Segmentation/blob/main/images/bayesian_good_results.png" alt="test results"/>
+
+At the same time, in the new figure below, the model has difficulty making relevant and accurate predictions. But it also returns a very low measure of certainty, which shows its lack of certainty about its results, which are not accurate in the end. This confirms that the measure of certainty can help the model avoid making wrong decisions, thus requiring expert advice and human intervention as soon as the measure of uncertainty exceeds a threshold.
+
+<img src="https://github.com/IhabBendidi/Bayesian_Cellular_Segmentation/blob/main/images/bayesian_bad_results.png" alt="test results"/>
+
