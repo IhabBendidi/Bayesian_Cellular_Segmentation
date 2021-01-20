@@ -1,4 +1,4 @@
-# Bayesian_Cellular_Segmentation
+# Bayesian Cellular Segmentation
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IhabBendidi/Bayesian_Cellular_Segmentation/blob/main/Cell_Segmentation_Bayesian.ipynb)
 
