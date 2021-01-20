@@ -4,3 +4,9 @@
 
 
 Segmentation of cells using bayesian neural networks for a certainty metric
+
+### Dataset
+
+### Architecture
+
+### Results
