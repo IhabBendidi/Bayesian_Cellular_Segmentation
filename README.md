@@ -11,7 +11,7 @@ We created a custom data set based on the training set of images and labels prov
 
 Examples of images in data :
 
-<img src="https://github.com/IhabBendidi/Bayesian_Cellular_Segmentation/blob/main/images/raw_data_images.png" alt="Dataset images" width="200"/>
+<img src="https://github.com/IhabBendidi/Bayesian_Cellular_Segmentation/blob/main/images/raw_data_images.png" alt="Dataset images" width="400"/>
 
 ### Architecture
 
